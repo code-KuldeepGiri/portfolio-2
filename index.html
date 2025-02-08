@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="" class="logo">
+        <a href="logo.png" class="logo"></a>
+        <nav class="navbar">
+             <a href="index.html">Home</a>
+             <a href="https://github.com/code-KuldeepGiri">Project</a>
+             <a href="https://code-kuldeepgiri.github.io/ADVENTURE/">Adventure</a>
+             <a href="https://code-kuldeepgiri.github.io/Portfolio/">Portfolio</a>
+             <a href="contact.html">Contact</a>
+             <img src="menu-btn.png" alt="" class="menu-btn">
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h2 id="a"></h2>
+                    <script>
+                        let a = ["Welcom To", "My Portfolio-Website"]
+                        let i = 0
+                        function print() {
+                            document.getElementById("a").innerHTML = a[i]
+                            i++
+                            if (i == 2) {
+                                i = 0
+                            }
+                        }
+                        setInterval(print, 1000)
+                    </script>
+            <h1>Hi, I'm Kuldeep Giri</h1>
+            <h3>Frontend Developer</h3>
+            <p>I'm Kuldeep Giri,
+                I've honed my skills in frontend and backend development
+            As a fresher stepping into the realm of frontend and backend development
+            I have hands-on experience in HTML, CSS, JavaScript, and frameworks like React.js for frontend development. On the backend, I'm skilled in Node.js, Express.js, and working with databases like MongoDB and MySQL</p>
+            <div class="btn-box">
+                <a href="https://app.luminpdf.com/viewer/663b32d4b14269605f60a905">Hire Me</a>
+                <a href="https://www.instagram.com/kuldeep_giri.9792?utm_source=qr&igsh=NzNvd2U5YTRwd2o1" class="btn2">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="https://www.facebook.com/kuldeep.giri.12327608/"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.linkedin.com/in/kuldeep-giri-aa78992a8/"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://github.com/code-KuldeepGiri"><i class='bx bxl-github'></i></a>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.querySelector('.menu-btn');
+            const navlinks = document.querySelector('.navbar');
+          
+            menuBtn.addEventListener('click', () => {
+              navlinks.classList.toggle('mobile-menu');
+            });
+          });          
+    </script>
+</body>
+</html>

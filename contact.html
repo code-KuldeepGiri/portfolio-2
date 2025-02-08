@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .logo{
+            color: rgba(9, 10, 10, 0.921);
+            font-size: 2.3rem;
+        }
+        form{
+            width: 300px;
+            padding: 15px 40px 40px;
+            margin: 50px auto 0;
+            margin-bottom: 20px;
+            background-color: #081b29;
+        }
+        input,select{
+            border: 1px solid rgb(6, 6, 6);
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 2px;
+        }
+    label{
+            display: block;
+            margin: 6px;
+
+        }
+        div{
+            padding-bottom: 12px;
+
+        }
+        .form-inline{
+            border: 1px solid black;
+            border-radius: 2px;
+            padding: 8px 10px 4px;
+            display: flex;
+        }
+        h2{
+            text-align: center;
+            border-bottom: 2px solid orange;
+        }
+        .navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;  
+  color: aliceblue;
+}
+.nav-links{
+    display: flex;
+    align-items: center; 
+}
+.nav-links li{
+    margin: 0 30px;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background: url('img/header-bg.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: aliceblue;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-bottom: 5px;
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
+<body>
+    
+    <form>                 
+        <h2>ENQUIRY FORM</h2>
+        <br/>
+        Name:-
+        <input type="text" name="name" value="" required="" placeholder="Enter your name here..."/>
+        <br/>
+        <br/>
+        Address:- 
+        <input type="text" name="adress" placeholder="Enter your Address......">
+        <br/>
+        <br/>
+        Father Name:-
+        <input type="text" name="name" placeholder="Enter your Father name......"/>
+        <br/>
+        <br/>
+        Mother Name:-
+        <input type="text" name="name" placeholder="Enter your Mother name....."/>
+        <br/>
+        <br/>
+        Contect No:-
+        <input type="number" name="contact no" placeholder="Enter your Contact no......"/>
+        <br/>
+        <br/>
+        Email Id:-
+        <input type="email" name="name" placeholder="Enter your Email......"/> 
+        <br/>
+        <br/>
+        <!-- Branch:-
+        <select>
+            <option>Please Select a Branch..</option>
+            <option label="CSE">
+            <option value="CSE-AI">CSE-AI</option>
+            <option value="ME">ME</option>
+            <option value="EE">EE</option>
+            <option value="ECE">ECE</option>    
+        </select> -->
+       
+        <!-- Rool-No:-
+        <input type="number" name="roll no"/>
+        <br/>
+        <br/> -->
+        Age:-
+        <input type="number" name="age" age="0"/>
+        <br/>
+        <br/>
+        Gender:-
+        <div class="form-inline"> 
+        <input type="radio" value="m" name="gender"/> Male
+        <input type="radio" value="f" name="gender"/> Female
+        <input type="radio" value="o" name="gender"/> Other
+        </div>
+        <br>
+        Country:
+        <select>
+        <option>please select a country </option>
+        <option label="ASIA">
+        <option value="India">India</option>
+        <option value="Sri lanka">Sri lanka</option>
+        <option value="USA">USA</option>
+        </select>
+        <br>
+        <br>
+        <!-- Hobbies:
+       <div class="form-inline">
+        <input type="checkbox" value="D" name="Dancing"> Dancing
+        <input type="checkbox"  value="S" name="Singing"> Singing
+        <input type="checkbox"  value="p" name="painting"> painting
+       </div> -->
+       
+        Color:
+        <input type="color" value="#FF0000" name="color"/> 
+        <br>
+        <br>
+        Image:
+        <input type="file" name="Image"/>
+        <br>
+        <br>
+        <input type="Submit" value="Send" align="center" style="background-color: red ; border-radius: 10px;"/>
+        <br>
+        <br>
+        <input type="Reset" value="Reset" align="center" style="background-color: red ; border-radius: 10px;"/>
+    </form>
+    <script>
+    let perent = document;
+    let headElement = document.head; 
+    let bodyElement = document.body;
+   /* let bodychild = bodyElement.children;
+    console.log(bodychild);*/
+    
+    let nextSibling = firstchild.nextElementSibling;
+    console.log(nextSibling);
+    </script>
+</body>
+</html>
